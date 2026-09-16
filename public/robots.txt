@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://computeraidedcomposition.com/sitemap-index.xml
