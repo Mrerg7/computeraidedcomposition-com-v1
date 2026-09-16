@@ -11,32 +11,32 @@ const STREAM_SRC =
   <Header />
 
   <main class="flex-1">
-    <section class="relative bg-score-950">
-      <div class="relative w-full" style="padding-top: 54.32098765432099%;">
+    <section class="relative overflow-hidden bg-score-950">
+      <div class="relative aspect-video w-full lg:absolute lg:inset-0 lg:h-full lg:aspect-auto">
         <iframe
           src={STREAM_SRC}
           title="Computer-Aided Composition hero video"
-          loading="lazy"
-          style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          class="absolute inset-0 h-full w-full border-0"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-          allowfullscreen="true"
+          allowfullscreen
         ></iframe>
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-score-950 via-score-950/55 to-score-950/20"></div>
-        <div class="absolute inset-0 flex items-end">
-          <div class="container-narrow w-full pb-6 pt-16 sm:pb-12 sm:pt-20">
-            <p class="mb-3 text-[10px] font-semibold uppercase tracking-widestx text-note-300 sm:text-xs">
-              CAC · AI Music · Structure · Systems
-            </p>
-            <h1 class="font-display text-3xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-              Computer-Aided Composition
-            </h1>
-            <p class="mt-4 max-w-xl text-sm leading-relaxed text-score-100/90 sm:mt-5 sm:text-lg">
-              Software that helps compose — constraints, algorithms, and models that draft structure so the composer can decide.
-            </p>
-            <div class="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
-              <a href="#field" class="btn-primary pointer-events-auto">The Field</a>
-              <a href="#acquisition" class="btn-secondary pointer-events-auto">Domain Available</a>
-            </div>
+        <div class="pointer-events-none absolute inset-0 hidden bg-gradient-to-t from-score-950 via-score-950/50 to-score-950/20 lg:block"></div>
+      </div>
+
+      <div class="relative lg:flex lg:min-h-[560px] lg:items-end">
+        <div class="container-narrow w-full py-8 sm:py-12 lg:pb-16 lg:pt-48">
+          <p class="mb-3 text-[10px] font-semibold uppercase tracking-widestx text-note-300 sm:text-xs">
+            CAC · AI Music · Structure · Systems
+          </p>
+          <h1 class="font-display text-3xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+            Computer-Aided Composition
+          </h1>
+          <p class="mt-4 max-w-xl text-sm leading-relaxed text-score-100/90 sm:mt-5 sm:text-lg">
+            Software that helps compose — constraints, algorithms, and models that draft structure so the composer can decide.
+          </p>
+          <div class="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
+            <a href="#field" class="btn-primary">The Field</a>
+            <a href="#acquisition" class="btn-secondary">Domain Available</a>
           </div>
         </div>
       </div>
