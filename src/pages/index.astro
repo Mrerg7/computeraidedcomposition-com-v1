@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const STREAM_SRC =
+  'https://customer-wa9cpywo3l4jte5c.cloudflarestream.com/dea80f869fb582fd9d20cf63a6381ecb/iframe?muted=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-wa9cpywo3l4jte5c.cloudflarestream.com%2Fdea80f869fb582fd9d20cf63a6381ecb%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false';
+---
+
+<Layout>
+  <Header />
+
+  <main class="flex-1">
+    <section class="relative bg-score-950">
+      <div class="relative w-full" style="padding-top: 54.32098765432099%;">
+        <iframe
+          src={STREAM_SRC}
+          title="Computer-Aided Composition hero video"
+          loading="lazy"
+          style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+          allowfullscreen="true"
+        ></iframe>
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-score-950 via-score-950/55 to-score-950/20"></div>
+        <div class="absolute inset-0 flex items-end">
+          <div class="container-narrow w-full pb-6 pt-16 sm:pb-12 sm:pt-20">
+            <p class="mb-3 text-[10px] font-semibold uppercase tracking-widestx text-note-300 sm:text-xs">
+              CAC · AI Music · Structure · Systems
+            </p>
+            <h1 class="font-display text-3xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+              Computer-Aided Composition
+            </h1>
+            <p class="mt-4 max-w-xl text-sm leading-relaxed text-score-100/90 sm:mt-5 sm:text-lg">
+              Software that helps compose — constraints, algorithms, and models that draft structure so the composer can decide.
+            </p>
+            <div class="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
+              <a href="#field" class="btn-primary pointer-events-auto">The Field</a>
+              <a href="#acquisition" class="btn-secondary pointer-events-auto">Domain Available</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="field" class="section-padding bg-score-50">
+      <div class="container-narrow max-w-3xl">
+        <p class="text-[11px] font-semibold uppercase tracking-widestx text-note-500">The field</p>
+        <h2 class="mt-3 font-display text-3xl font-semibold text-score-950 sm:text-4xl">CAC is older than the current AI wave</h2>
+        <div class="mt-6 space-y-4 text-sm leading-relaxed text-score-800 sm:text-base">
+          <p>
+            <strong class="text-score-950">Computer-aided composition</strong> is the established name for software that generates, constrains, and varies musical material.
+            Before generative models, composers used rule systems, grammars, and search. The models changed. The category name did not.
+          </p>
+          <p>
+            AI music tools are the latest layer on that stack: sequence models, style transfer, accompaniment, and score assistants.
+            A professional brand in this space still needs the phrase researchers and studios already use — not a coined product name.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="systems" class="section-padding bg-white">
+      <div class="container-narrow">
+        <div class="max-w-2xl">
+          <p class="text-[11px] font-semibold uppercase tracking-widestx text-note-500">Systems</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold text-score-950 sm:text-4xl">What the category covers</h2>
+        </div>
+        <div class="mt-10 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-3">
+          <article class="card">
+            <h3 class="font-display text-xl font-semibold text-score-950">Structure</h3>
+            <p class="mt-3 text-sm leading-relaxed text-score-700">Harmony, rhythm, and form as objects a system can propose, filter, and rewrite under composer control.</p>
+          </article>
+          <article class="card">
+            <h3 class="font-display text-xl font-semibold text-score-950">Models</h3>
+            <p class="mt-3 text-sm leading-relaxed text-score-700">Learned systems that continue a motif, orchestrate a sketch, or generate variations without claiming authorship.</p>
+          </article>
+          <article class="card">
+            <h3 class="font-display text-xl font-semibold text-score-950">Workflow</h3>
+            <p class="mt-3 text-sm leading-relaxed text-score-700">DAW, notation, and score pipelines where the machine drafts and the human keeps the final pass.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="brand" class="section-padding bg-score-50">
+      <div class="container-narrow grid gap-10 lg:grid-cols-2 lg:items-start">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-widestx text-note-500">The domain</p>
+          <h2 class="mt-3 font-display text-3xl font-semibold text-score-950 sm:text-4xl">Why this name</h2>
+          <p class="mt-4 text-sm leading-relaxed text-score-800 sm:text-base">
+            <strong class="text-score-950">ComputerAidedComposition.com</strong> is the category in plaintext.
+            It works for a research group, a plugin company, a studio tool, or a curriculum — anyone who needs the formal term instead of a slogan.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-score-200 bg-white p-6 sm:p-8">
+          <dl class="space-y-5">
+            <div class="flex items-baseline justify-between gap-4 border-b border-score-100 pb-4">
+              <dt class="text-sm text-score-600">Field</dt>
+              <dd class="font-display text-xl font-semibold text-score-950">CAC</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4 border-b border-score-100 pb-4">
+              <dt class="text-sm text-score-600">Layer</dt>
+              <dd class="font-display text-xl font-semibold text-score-950">AI + rules</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4 border-b border-score-100 pb-4">
+              <dt class="text-sm text-score-600">Buyers</dt>
+              <dd class="font-display text-xl font-semibold text-score-950">Lab · Tool · Studio</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4">
+              <dt class="text-sm text-score-600">Status</dt>
+              <dd class="font-display text-xl font-semibold text-note-500">Available</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-t border-score-200 bg-white py-10 sm:py-12">
+      <div class="container-narrow text-center">
+        <p class="mx-auto max-w-2xl text-xs leading-relaxed text-score-600 sm:text-sm">
+          Information presented is for demonstration and educational purposes only and does not constitute an offer of software or composition services.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
